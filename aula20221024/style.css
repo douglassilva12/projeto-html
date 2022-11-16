@@ -1,0 +1,125 @@
+/* seletor de classe - usando ponto no inicio do nome do seletor*/
+.cadastro3 {
+    color: grey;
+    font-size: 60px;
+    border: 3px dashed rgb(0, 58, 128);
+    border-radius: 10em;
+}
+
+/* seletor pelo id  - usando hashtag no inicio do nome do seletor*/
+#cadastro4 {
+    color: rgb(6, 119, 60);
+    font-size: 60px;
+    border: 3px dashed rgb(0, 58, 128);
+    border-radius: 10em;
+}
+
+/* seletor pelo elemento html */
+/* aplicar um estilo a todos os elementos do tipo input */
+input {
+    background-color: aquamarine;
+}
+
+/* pegando todos os input do tipo "type" = text*/
+input[type="text"] {
+    background-color: rgb(255, 127, 153);
+}
+
+input[type="text"]:hover {
+    background-color: aquamarine;
+}
+
+h1:hover {
+    background-color: aquamarine;
+    color: blue;
+    transition: all .4s ease-in-out;
+}
+
+.testes {
+    display: none;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form input[type="text"] {
+    margin-top: 10px;
+}
+
+form label {
+    margin-top: 10px;
+}
+
+/* Formatando os botões do formulário */
+.botao-formulario {
+    height: 100px;
+    border: 1px solid red;
+    /* somente habilita as propriedades com display Flex */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.botao-formulario input {
+    max-height: 100px;
+}
+
+/* formatando o botão limpar */
+.botao-formulario input[type="reset"] {
+    max-height: 100px;
+    background-color: tomato;
+    padding: 10px;
+    color: aliceblue;
+    border: none;
+    border-radius: 10px;
+}
+
+/* formatando o botão limpar */
+.botao-formulario input[type="submit"] {
+    max-height: 100px;
+    background-color: rgb(4, 131, 74);
+    padding: 10px;
+    color: aliceblue;
+    border: none;
+    border-radius: 10px;
+}
+
+/* evento do mouse */
+.botao-formulario input:hover {
+    cursor: pointer;
+    background-color: aquamarine;
+    color: black;
+    font-weight: bold;
+    transition: all .4s ease-in-out;
+}
+
+/* hover do botao Limpar */
+.botao-formulario input[type="reset"]:hover {
+    background-color: red;
+}
+
+/* hover do botao Confirmar */
+.botao-formulario input[type="submit"]:hover {
+    background-color: red;
+}
+
+/* Lista de testes CSS */
+.lista-testes a:link {
+    color: green;
+}
+
+.lista-testes a:visited {
+    color: red;
+}
+
+.lista-testes a:hover {
+    color: blue;
+}
+
+ol {
+    list-style-type: decimal;
+}
